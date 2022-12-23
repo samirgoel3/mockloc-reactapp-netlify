@@ -11,6 +11,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/dl-stpoint' element={<Deeplink />} />
+        <Route path='/dl-playlist-points' element={<Deeplink />} />
       </Routes>
     </BrowserRouter>
   );

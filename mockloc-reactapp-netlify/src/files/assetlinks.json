@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.mocker.mockloc",
+        "sha256_cert_fingerprints": [
+          "ED:46:AC:1E:86:35:42:BC:E0:0B:CD:6C:75:B4:92:CC:7F:F9:B8:51:14:13:91:6F:8D:DF:92:EF:FF:67:6E:4A"
+        ]
+      }
+    }
+  ]

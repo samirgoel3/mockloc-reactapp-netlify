@@ -87,7 +87,7 @@ const HomePageView: React.FC = () => {
       <nav className={`ml-nav${scrolled ? ' ml-nav--scrolled' : ''}`} role="navigation">
         <div className="ml-nav__inner">
           <div className="ml-nav__brand">
-            <img src="/mockloc-logo.png" alt="Mock Loc app icon" className="ml-nav__logo" />
+            <img src="/mockloc-icon.png" alt="Mock Loc app icon" className="ml-nav__logo" />
             <span className="ml-nav__name">Mock Loc</span>
           </div>
           <a
@@ -234,7 +234,7 @@ const HomePageView: React.FC = () => {
           <div className="ml-cta-banner__inner">
             <div className="ml-cta-banner__glow" aria-hidden="true" />
             <img
-              src="/mockloc-logo.png"
+              src="/mockloc-icon.png"
               alt="Mock Loc app icon"
               className="ml-cta-banner__icon"
             />
@@ -261,7 +261,7 @@ const HomePageView: React.FC = () => {
         <div className="ml-container">
           <div className="ml-footer__inner">
             <div className="ml-footer__brand">
-              <img src="/mockloc-logo.png" alt="Mock Loc" className="ml-footer__logo" />
+              <img src="/mockloc-icon.png" alt="Mock Loc" className="ml-footer__logo" />
               <span className="ml-footer__name">Mock Loc</span>
             </div>
             <p className="ml-footer__copy">

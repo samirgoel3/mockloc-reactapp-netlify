@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './home-page.css';
 
 const PLAY_STORE_URL =
@@ -90,16 +91,25 @@ const HomePageView: React.FC = () => {
             <img src="/mockloc-icon.png" alt="Mock Loc app icon" className="ml-nav__logo" />
             <span className="ml-nav__name">Mock Loc</span>
           </div>
-          <a
-            id="nav-cta"
-            href={PLAY_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-btn ml-btn--sm ml-btn--primary"
-          >
-            <PlayIcon size={15} />
-            Get on Play Store
-          </a>
+          <div className="ml-nav__actions" style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+            <Link
+              to="/login"
+              className="ml-btn ml-btn--sm ml-btn--ghost"
+              style={{ padding: '8px 16px', fontSize: '14px' }}
+            >
+              Login
+            </Link>
+            <a
+              id="nav-cta"
+              href={PLAY_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-btn ml-btn--sm ml-btn--primary"
+            >
+              <PlayIcon size={15} />
+              Get on Play Store
+            </a>
+          </div>
         </div>
       </nav>
 

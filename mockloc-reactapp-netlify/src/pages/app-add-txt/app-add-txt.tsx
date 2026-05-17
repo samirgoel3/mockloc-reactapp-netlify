@@ -1,4 +1,4 @@
-import React, { Component } from 'react' 
+import React from 'react' 
 import AppAddTxtView from './app-app-txt-view'
 
 const AppAddTxt:React.FC = ()=>{

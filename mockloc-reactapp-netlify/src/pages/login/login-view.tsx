@@ -29,6 +29,28 @@ const BackIcon = () => (
   </svg>
 );
 
+// ─── ANIMATION WIDGET ───
+const LocationMockAnimation = () => (
+  <div className="mock-anim-container">
+    <div className="mock-anim-title">Simulate Location in Real-Time</div>
+    <div className="mock-anim-track">
+      <div className="mock-anim-line" />
+      
+      <div className="mock-anim-point point-a">
+        <div className="point-dot" />
+        <span className="point-label">Real Location</span>
+      </div>
+      
+      <div className="mock-anim-point point-b">
+        <div className="point-dot pulse-active" />
+        <span className="point-label highlight">Mocked Location</span>
+      </div>
+
+      <div className="mock-anim-pin">📍</div>
+    </div>
+  </div>
+);
+
 // ─── SUB-COMPONENTS ───
 
 const LeftPanel: React.FC = () => (
@@ -39,26 +61,37 @@ const LeftPanel: React.FC = () => (
     </Link>
 
     <div className="login-left-content">
-      <h1 className="login-left-title">Master your location testing with <span>Mock Loc</span></h1>
+      <h1 className="login-left-title">Level up your workflow with an <span>Account</span></h1>
       <p className="login-left-subtitle">
-        The ultimate GPS location spoofer for developers, testers, and everyday users. Fake your location effortlessly.
+        Logging in unlocks advanced features designed to save you time when testing across multiple devices.
       </p>
 
-      <div className="login-highlights">
-        {[
-          { icon: '🌍', title: 'Global Spoofing', text: 'Set any GPS coordinates on the globe with a single tap. Complete control over your virtual position.' },
-          { icon: '🗺️', title: 'Interactive Map', text: 'Browse a full interactive map and drop a pin exactly where you want your mock location to appear.' },
-          { icon: '🛣️', title: 'Route Simulation', text: 'Create waypoints and simulate movement along a custom route with fully adjustable speed.' },
-          { icon: '🔒', title: 'No Root Required', text: 'Works safely and securely through Android Developer Options without voiding your warranty.' },
-        ].map((h, i) => (
-          <div key={i} className="highlight-item">
-            <div className="highlight-icon">{h.icon}</div>
-            <div className="highlight-text">
-              <h3>{h.title}</h3>
-              <p>{h.text}</p>
-            </div>
+      <LocationMockAnimation />
+
+      <div className="login-timeline">
+        <div className="timeline-step">
+          <div className="timeline-icon">📍</div>
+          <div className="timeline-content">
+            <h3>Save Location Points</h3>
+            <p>Bookmark your frequently used coordinates. No more typing in the same lat/long values repeatedly.</p>
           </div>
-        ))}
+        </div>
+        
+        <div className="timeline-step">
+          <div className="timeline-icon">🛣️</div>
+          <div className="timeline-content">
+            <h3>Create Itineraries</h3>
+            <p>Build and save complex playlists of routes and waypoints for continuous movement simulation.</p>
+          </div>
+        </div>
+        
+        <div className="timeline-step">
+          <div className="timeline-icon">☁️</div>
+          <div className="timeline-content">
+            <h3>Sync Across Devices</h3>
+            <p>Test on multiple phones or tablets seamlessly. All your saved data instantly syncs everywhere you log in.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
